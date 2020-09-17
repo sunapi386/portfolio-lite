@@ -1,0 +1,14 @@
+:root {
+  --color-text: #333;
+  --color-primary: #006aff;
+  --color-link: skyblue;
+  --page-background: #fff;
+  --mobie: 500px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text: white;
+    --page-background: #333;
+  }
+}
