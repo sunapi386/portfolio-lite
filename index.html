@@ -1,29 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="./variables.css">
-    <title>Albin Groen | Frontend developer from Västerås, Sweden</title>
-    <meta name="description" content="I'm a frontend developer that's profecient in HTML, CSS, React, JavaScript and Typescript. I taught myself the web development fundamentals and learned the rest at work. I have created countless side projects with 1 with 300+ users.">
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./variables.css" />
+  <title>Albin Groen | Frontend developer from Västerås, Sweden</title>
+  <meta name="description"
+    content="I'm a frontend developer that's profecient in HTML, CSS, React, JavaScript and Typescript. I taught myself the web development fundamentals and learned the rest at work. I have created countless side projects with 1 with 300+ users." />
+</head>
+
+<body>
+  <div class="row">
     <main>
-      <h1>Hi, I'm Albin</h1> 
-      <hr>
-      <p>I'm a frontend developer from <a href="https://duckduckgo.com/?t=ffab&q=v%C3%A4ster%C3%A5s%2C+sweden&ia=maps&iaxm=maps">Västerås, Sweden</a>.</p>
-      <p>I'm profecient in HTML, CSS, React, JavaScript and Typescript.</p>
-      <p>I taught myself the web development fundamentals and learned the rest at work.</p>
-      <p>I have created countless side projects with 1 with 300+ users.</p>
-      <p>I have written several <a href="https://medium.com/@albingroen">articles</a> about web development and spoken at 1 <a href="https://www.youtube.com/watch?v=DCk-gjrJQmU">sthlmjs meetup</a>.</p>
-      <p>I currently work at <a href="https://dooer.com">Dooer</a> as a <strong>web developer</strong></p>
-      <p>You can reach me here on my <a href="mailto:albin.groen@gmail.com">email</a>.</p>
-      <p>Checkout my <a href="https://github.com/albingroen">GitHub</a> account.</p>
-      <p>And get in contact through <a href="https://linkedin.com/in/albin.groen">LinkedIn</a>.</p>
-      <hr>
-      <p><strong>Hope to speak to you soon! <span role="img" role="emoji">💬</span></strong></p>
+      <a href="/" style="border: none"><img src="./logo.svg" id="logo" alt="logo" /></a>
     </main>
-  </body>
+  </div>
+
+  <div class="row">
+    <main>
+      <h1>
+        Hi, I'm Albin. A software engineer from Sweden. Specializing in
+        <strong><a style="color: inherit" target="_blank" rel="noopener noreferrer"
+            href="https://reactjs.org/">React.js</a></strong>
+        and
+        <strong><a style="color: inherit" target="_blank" rel="noopener noreferrer"
+            href="https://www.typescriptlang.org/">Typescript</a></strong>.
+      </h1>
+    </main>
+
+    <aside>
+      <div id="profile"></div>
+    </aside>
+  </div>
+
+  <div class="row">
+    <main>
+      <label>TLDR</label>
+
+      <p>I'm profecient in HTML, CSS, React, JavaScript and Typescript.</p>
+      <p>
+        I taught myself the web development fundamentals and learned the rest
+        at work.
+      </p>
+      <p>I have created countless side projects with 1 with 300+ users.</p>
+      <p>
+        I have written several
+        <a href="https://medium.com/@albingroen">articles</a> about web
+        development and spoken at 1
+        <a href="https://www.youtube.com/watch?v=DCk-gjrJQmU">sthlmjs meetup</a>.
+      </p>
+      <p>
+        I currently work at <a href="https://dooer.com">Dooer</a> as a web
+        developer
+      </p>
+
+      <hr />
+
+      <label>About me</label>
+      <p>
+        I have been assigned to architect large frontend projects to make sure
+        everything is as optimised and future proof as possible. From choosing
+        which linter to use, to what state machine is the best solution for
+        the problem. I have been writing JavaScript, Typescript, and React
+        code for many years at this point, and I feel comfortable I can help
+        you or your team accomplish your goals in the best possible way.
+      </p>
+
+      <br />
+
+      <p>
+        Even though I'm mosly frontend oriented, I do not turn down the
+        oppurtunity to dive deep into back end code bases to solve issues or
+        implement new features myself. I can communicate well, write
+        documentation, and work in teams. I'm calm, solutions-oriented, and
+        always willing to go the extra mile to ensure the best user experience
+        gets shipped. I do come from a design background, which helps greatly
+        when building frontend applications.
+      </p>
+
+      <br />
+
+      <p>
+        I have helped companies like Dooer, Wopify, Ekstrand consulting and
+        Loovia improve their web experiences, as well as designing and
+        building products with scalable and modern technologies from start to
+        finish.
+      </p>
+    </main>
+
+    <aside>
+      <div id="sideProjects">
+        <label>Personal projects</label>
+        <div v-for="repo in repos">
+          <a class="repo" target="blank" rel="noopener noreferrer" :href="repo.html_url">{{ repo.name }}</a>
+        </div>
+
+        <div id="socials">
+          <a target="blank" rel="noopener noreferrer" href="https://github.com/albingroen"><i
+              class="fab fa-github"></i></a>
+          <a target="blank" rel="noopener noreferrer" href="https://twitter.com/AlbinGroen"><i
+              class="fab fa-twitter"></i></a>
+          <a target="blank" rel="noopener noreferrer" href="https://medium.com/@albingroen"><i
+              class="fab fa-medium"></i></a>
+          <a target="blank" rel="noopener noreferrer" href="mailto:albin.groen@gmail.com"><i class="fas fa-at"></i></a>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+  <script src="https://kit.fontawesome.com/82af46a315.js" crossorigin="anonymous"></script>
+
+  <script>
+    var app = new Vue({
+      el: "#sideProjects",
+      data: {
+        repos: [],
+      },
+      beforeMount() {
+        this.getRepos();
+      },
+      methods: {
+        async getRepos() {
+          const repos = await fetch(
+            "https://api.github.com/users/albingroen/repos?sort=updated&type=owner&per_page=5"
+          ).then((res) => res.json());
+
+          this.repos = repos;
+        },
+      },
+    });
+  </script>
+</body>
+
 </html>
