@@ -73,7 +73,7 @@ h1 {
 }
 
 #profile {
-  background-image: url("./profile.png");
+  background-image: url("https://res.cloudinary.com/albin-groen/image/upload/f_auto,q_auto,w_500/v1602935305/profile_uzcvre.png");
   -webkit-transition: 0.1s ease-in-out 0s;
   transition: 0.1s ease-in-out 0s;
   background-position: center;
