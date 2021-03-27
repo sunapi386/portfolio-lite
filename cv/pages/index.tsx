@@ -12,9 +12,9 @@ export default function Home() {
       <div className="max-w-screen-lg mx-auto py-24 px-6">
         <header className="flex flex-col lg:flex-row text-center lg:text-left items-center space-y-8 lg:space-y-0 lg:space-x-12">
           <img
-            src="/profile.png"
             className="w-52 rounded-lg bg-blue-50 dark:bg-gray-600 object-contain object-bottom"
-            alt=""
+            alt="Albin Groen profile"
+            src="/profile.png"
           />
           <div>
             <h1 className="text-6xl font-bold">Albin Groen</h1>
