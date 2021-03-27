@@ -12,7 +12,7 @@
     "color": "green-500"
   },
   {
-    "title": "Sthlm.js meeting talk",
+    "title": "Sthlm.js meetup talk",
     "description": "Back in May 2020 I did my first ever public talk and spoke at the coding meetup group Sthlm.js about how I'm building my own visual regression testing tool.",
     "colorDark": "red-200",
     "color": "red-500"
