@@ -40,7 +40,7 @@ export default function Home() {
           </div>
         </header>
 
-        <section className="flex flex-col lg:flex-row items-start space-y-10 md:space-x-24 md:space-y-0 mt-8">
+        <section className="flex flex-col lg:flex-row items-start space-y-10 md:space-x-20 md:space-y-0 mt-8">
           <div className="w-3/5">
             <h2 className="text-3xl font-medium">Work history</h2>
 
