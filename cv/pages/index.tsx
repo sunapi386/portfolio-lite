@@ -23,13 +23,19 @@ export default function Home() {
             </p>
             <p className="mt-3">
               Email address:{" "}
-              <span className="font-bold">albin.groen@gmail.com</span>
+              <span className="font-semibold dark:font-bold">
+                albin.groen@gmail.com
+              </span>
             </p>
             <p className="mt-1">
-              Phone: <span className="font-bold">+46720173749</span>
+              Phone:{" "}
+              <span className="font-semibold dark:font-bold">+46720173749</span>
             </p>
             <p className="mt-1">
-              Location: <span className="font-bold">Västerås, Sweden</span>
+              Location:{" "}
+              <span className="font-semibold dark:font-bold">
+                Västerås, Sweden
+              </span>
             </p>
           </div>
         </header>
