@@ -10,7 +10,7 @@ export default function Home() {
       </Head>
 
       <div className="max-w-screen-lg mx-auto py-24 px-6">
-        <header className="flex flex-col lg:flex-row text-center lg:text-left items-center space-y-8 lg:space-y-0 lg:space-x-12">
+        <header className="flex items-center space-x-12">
           <img
             className="w-52 rounded-lg bg-blue-50 dark:bg-gray-600 object-contain object-bottom"
             alt="Albin Groen profile"
@@ -40,7 +40,7 @@ export default function Home() {
           </div>
         </header>
 
-        <section className="flex flex-col lg:flex-row items-start space-y-10 md:space-x-20 md:space-y-0 mt-8">
+        <section className="flex  items-start space-x-20 mt-8">
           <div className="w-3/5">
             <h2 className="text-3xl font-medium">Work history</h2>
 
@@ -56,16 +56,16 @@ export default function Home() {
               <ul className="list-disc pl-5 mt-3 flex flex-col space-y-2 text-lg">
                 <li>
                   Lead frontend development architecture and decision making in
-                  a R&D team in fall of 2020. Some of the things I introduced
-                  include a organized design system and new state management
+                  an R&D team in fall of 2020. Some of the things I introduced
+                  include an organized design system and a new state management
                   tool. This helped peers be more productive and less unsure
                   about what technologies to use.
                 </li>
                 <li>
-                  Developed a new way for potentical customers to get a quota
+                  Developed a new way for potential customers to get a quote
                   directly on our public website. I did this in close
                   collaboration with a senior software engineer. This increased
-                  overall sales with about 15%.
+                  overall sales by about 15%.
                 </li>
               </ul>
             </div>
@@ -79,8 +79,8 @@ export default function Home() {
               </h4>
               <ul className="list-disc pl-5 mt-3 flex flex-col space-y-2 text-lg">
                 <li>
-                  Re-designed the business facing recruiting application in
-                  close contact with stakeholders such as CEO, CTO and
+                  Re-designed the business-facing recruiting application in
+                  close contact with stakeholders such as the CEO, CTO, and
                   co-founder.
                 </li>
                 <li>
@@ -100,8 +100,8 @@ export default function Home() {
                 I have worked a long time with web development. Starting with
                 JavaScript HTML and CSS and learning the communication between
                 server and client, and nowadays specializing in frameworks and
-                tools like React, TypeScript, GraphQL, design-systems and state
-                management libraries. I have knowledge with a large scale of web
+                tools like React, TypeScript, GraphQL, design-systems, and state
+                management libraries. I have knowledge of a large scale of web
                 development tools and services, but can't list them all here, so
                 feel free to ask me.
               </p>
@@ -117,7 +117,7 @@ export default function Home() {
                   1st place Northack hackathon
                 </h3>
 
-                <p className="lg:max-w-md mt-1 text-lg text-gray-500 dark:text-gray-400">
+                <p className="max-w-md mt-1 text-lg text-gray-500 dark:text-gray-400">
                   November 2019
                 </p>
               </div>
@@ -127,7 +127,7 @@ export default function Home() {
                   2nd place OpenHack hackathon
                 </h3>
 
-                <p className="lg:max-w-md mt-1 text-lg text-gray-500 dark:text-gray-400">
+                <p className="max-w-md mt-1 text-lg text-gray-500 dark:text-gray-400">
                   November 2018
                 </p>
               </div>
@@ -137,7 +137,7 @@ export default function Home() {
                   Most improved student diploma
                 </h3>
 
-                <p className="lg:max-w-md mt-1 text-lg text-gray-500 dark:text-gray-400">
+                <p className="max-w-md mt-1 text-lg text-gray-500 dark:text-gray-400">
                   June 2018
                 </p>
               </div>
@@ -156,9 +156,7 @@ export default function Home() {
                 >
                   {project.title}
                 </h3>
-                <p className="max-w-lg lg:max-w-md mt-2">
-                  {project.description}
-                </p>
+                <p className="max-w-md mt-2">{project.description}</p>
               </div>
             ))}
             <div className="mt-10">
@@ -171,7 +169,7 @@ export default function Home() {
                   Wijkmanska Highschool
                 </h3>
 
-                <p className="lg:max-w-md mt-1 text-lg text-gray-500 dark:text-gray-400">
+                <p className="max-w-md mt-1 text-lg text-gray-500 dark:text-gray-400">
                   Technical degree | 2015-2018
                 </p>
               </div>

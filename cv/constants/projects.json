@@ -1,7 +1,7 @@
 [
   {
     "title": "Accessible notes application",
-    "description": "Back in 2020 I embarked on a journey to solve my personal note taking needs. I decided to build a fully keyboard accessible notes application.",
+    "description": "Back in 2020, I embarked on a journey to solve my personal note-taking needs. I decided to build a fully keyboard-accessible notes application.",
     "colorDark": "indigo-200",
     "color": "indigo-500"
   },
@@ -25,7 +25,7 @@
   },
   {
     "title": "Nordic.js/design volunteer",
-    "description": "Back in fall of 2018 I, together with many others, helped organize the design and development conference of Nordic.design and Nordic.js in Stockholm.",
+    "description": "Back in the fall of 2018 I, together with many others, helped organize the design and development conference of Nordic.design and Nordic.js in Stockholm.",
     "colorDark": "yellow-200",
     "color": "yellow-500"
   }
