@@ -77,6 +77,8 @@ export default function Home() {
             <div className="grid grid-cols-1 mt-10">
               <a
                 onMouseLeave={() => setHovering(undefined)}
+                rel="noopener noreferrer"
+                target="_blank"
                 onMouseOver={() => setHovering("xhr")}
                 href="https://xhr.sh"
                 className="pb-5 lg:pb-10"
@@ -110,6 +112,8 @@ export default function Home() {
               <a
                 onMouseOver={() => setHovering("cryptoprices")}
                 onMouseLeave={() => setHovering(undefined)}
+                rel="noopener noreferrer"
+                target="_blank"
                 href="https://cryptoprices.vercel.app"
                 className="pb-5G lg:pb-10"
               >
@@ -142,6 +146,8 @@ export default function Home() {
               <a
                 onMouseOver={() => setHovering("keyboardnotes")}
                 onMouseLeave={() => setHovering(undefined)}
+                rel="noopener noreferrer"
+                target="_blank"
                 href="https://keyboardnotes.io"
                 className="pb-5G lg:pb-10"
               >
@@ -176,6 +182,8 @@ export default function Home() {
 
               <a
                 onMouseLeave={() => setHovering(undefined)}
+                rel="noopener noreferrer"
+                target="_blank"
                 onMouseOver={() => setHovering("referrer")}
                 href="https://referrer.sh"
                 className="pb-5G lg:pb-10"
@@ -209,6 +217,8 @@ export default function Home() {
               <a
                 onMouseOver={() => setHovering("secretely")}
                 onMouseLeave={() => setHovering(undefined)}
+                rel="noopener noreferrer"
+                target="_blank"
                 href="https://secretely.com"
                 className="pb-5G lg:pb-10"
               >
