@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+
+.grayscale {
+  filter: grayscale(100%)
+}
+
+.card {
+  @apply flex flex-col justify-end shadow h-64 md:h-80 rounded-lg p-8 bg-cover bg-bottom transition-opacity
+}
+
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  display: none;
+}
