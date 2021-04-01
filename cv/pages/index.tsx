@@ -9,11 +9,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="max-w-screen-lg mx-auto py-24 px-6">
+      <div className="px-6 py-24 mx-auto max-w-screen-lg">
         <header className="flex items-center space-x-12">
           <img
             className="w-52 rounded-lg bg-blue-50 dark:bg-gray-600 object-contain object-bottom"
             alt="Albin Groen profile"
+            src="/profile.png"
           />
           <div>
             <h1 className="text-6xl font-bold">Albin Groen</h1>

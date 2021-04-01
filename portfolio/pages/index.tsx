@@ -27,7 +27,7 @@ export default function Home() {
           property="og:description"
           content="This portfolio contains products and tools that Albin Groen has designed, built, and marketed throughout the years."
         />
-        <meta property="og:image" content="/seo.png" />
+        <meta property="og:image" content="https://res.cloudinary.com/albin-groen/image/upload/v1617307444/portfolio-seo_qayca0.png" />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta
@@ -39,7 +39,7 @@ export default function Home() {
           property="twitter:description"
           content="This portfolio contains products and tools that Albin Groen has designed, built, and marketed throughout the years."
         />
-        <meta property="twitter:image" content="/seo.png" />
+        <meta property="twitter:image" content="https://res.cloudinary.com/albin-groen/image/upload/v1617307444/portfolio-seo_qayca0.png" />
       </Head>
 
       <div className="h-screen bg-gray-800 text-white antialiased overflow-auto">
