@@ -67,7 +67,9 @@ export default function Home() {
               <br /> I've also worked at Wopify and{" "}
               <a
                 className="text-pink-300 font-semibold hover:underline"
+                rel="noopener noreferrer"
                 href="https://dooer.com"
+                target="_blank"
               >
                 Dooer
               </a>
