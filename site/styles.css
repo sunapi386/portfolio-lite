@@ -44,8 +44,21 @@ body {
   max-width: 40px;
 }
 
-main, aside {
+main, aside, nav, header {
   padding: 0 2rem;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
 }
 
 aside {
@@ -153,7 +166,6 @@ label {
 }
 
 #socials {
-  margin: 1.15rem 0;
   margin-left: -0.35rem;
   display: -webkit-box;
   display: -ms-flexbox;
