@@ -81,6 +81,43 @@ export default function Home() {
                 onMouseLeave={() => setHovering(undefined)}
                 rel="noopener noreferrer"
                 target="_blank"
+                onMouseOver={() => setHovering("john")}
+                href="https://johnapp.vercel.app"
+                className="pb-5 lg:pb-10"
+              >
+                <div
+                  className={`card ${
+                    !hovering || hovering === "john"
+                      ? "opacity-100"
+                      : "opacity-50 grayscale"
+                  }`}
+                  style={{ backgroundImage: "url(/john.png)" }}
+                >
+                  <h2 className="text-4xl font-bold">John</h2>
+                  <p className="text-lg mt-2 truncate font-medium text-green-100">
+                    Online health tracker website
+                  </p>
+                  <div className="flex items-center space-x-1.5 mt-4">
+                    <span className="p-0.5 px-2 rounded-full uppercase font-mono tracking-wide border border-green-400 font-semibold text-xs">
+                      Next.js
+                    </span>
+                    <span className="p-0.5 px-2 rounded-full uppercase font-mono tracking-wide border border-green-400 font-semibold text-xs">
+                      Typescript
+                    </span>
+                    <span className="p-0.5 px-2 rounded-full uppercase font-mono tracking-wide border border-green-400 font-semibold text-xs">
+                      MongoDB
+                    </span>
+                    <span className="p-0.5 px-2 rounded-full uppercase font-mono tracking-wide border border-green-400 font-semibold text-xs">
+                      Auth0
+                    </span>
+                  </div>
+                </div>
+              </a>
+
+              <a
+                onMouseLeave={() => setHovering(undefined)}
+                rel="noopener noreferrer"
+                target="_blank"
                 onMouseOver={() => setHovering("xhr")}
                 href="https://xhr.sh"
                 className="pb-5 lg:pb-10"
