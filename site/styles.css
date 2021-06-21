@@ -1,6 +1,6 @@
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   color: var(--color-text);
   padding: 0;
   margin: 0;
@@ -21,8 +21,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   margin-bottom: 6rem;
 }
 
@@ -30,8 +30,8 @@ body {
   .row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     margin-bottom: 0;
     margin: 4rem 0;
   }
@@ -44,7 +44,10 @@ body {
   max-width: 40px;
 }
 
-main, aside, nav, header {
+main,
+aside,
+nav,
+header {
   padding: 0 2rem;
 }
 
@@ -53,11 +56,11 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -66,7 +69,7 @@ aside {
 }
 
 h1 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: var(--color-text);
   font-weight: 300;
   font-size: 3.5em;
@@ -97,14 +100,14 @@ h1 {
   width: 200px;
   margin-top: 1rem;
   -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 #profile:hover {
   -webkit-transition: 0.1s ease-in-out 0s;
   transition: 0.1s ease-in-out 0s;
   -webkit-filter: initial;
-          filter: initial;
+  filter: initial;
 }
 
 @media (max-width: 1000px) {
@@ -167,14 +170,18 @@ label {
   }
 }
 
+ul {
+  list-style: none;
+}
+
 #socials {
   margin-left: -0.35rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 #socials a {
