@@ -89,18 +89,15 @@ h1 {
 }
 
 #profile {
-  background-image: url("https://res.cloudinary.com/albin-groen/image/upload/v1622634189/avatar_ax3k0t.png");
+  background-image: url("https://res.cloudinary.com/albin-groen/image/upload/v1624437674/19674362_rxa43h.png");
   -webkit-transition: 0.1s ease-in-out 0s;
   transition: 0.1s ease-in-out 0s;
   background-position: center;
   background-size: cover;
-  border: 1px solid #ddd;
   border-radius: 50%;
   height: 200px;
   width: 200px;
   margin-top: 1rem;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
 }
 
 #profile:hover {
