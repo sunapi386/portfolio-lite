@@ -27,7 +27,10 @@ export default function Home() {
           property="og:description"
           content="This portfolio contains products and tools that Albin Groen has designed, built, and marketed throughout the years."
         />
-        <meta property="og:image" content="https://res.cloudinary.com/albin-groen/image/upload/v1617307444/portfolio-seo_qayca0.png" />
+        <meta
+          property="og:image"
+          content="https://res.cloudinary.com/albin-groen/image/upload/v1617307444/portfolio-seo_qayca0.png"
+        />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta
@@ -39,7 +42,10 @@ export default function Home() {
           property="twitter:description"
           content="This portfolio contains products and tools that Albin Groen has designed, built, and marketed throughout the years."
         />
-        <meta property="twitter:image" content="https://res.cloudinary.com/albin-groen/image/upload/v1617307444/portfolio-seo_qayca0.png" />
+        <meta
+          property="twitter:image"
+          content="https://res.cloudinary.com/albin-groen/image/upload/v1617307444/portfolio-seo_qayca0.png"
+        />
       </Head>
 
       <div className="h-screen overflow-auto antialiased text-white bg-gray-800">
@@ -64,16 +70,8 @@ export default function Home() {
             <p className="mt-4 text-xl leading-relaxed text-gray-400">
               These are products and tools that I've designed, built and
               marketed myself.
-              <br /> I've also worked at Wopify and{" "}
-              <a
-                className="font-semibold text-pink-300 hover:underline"
-                rel="noopener noreferrer"
-                href="https://dooer.com"
-                target="_blank"
-              >
-                Dooer
-              </a>
-              , but I can't show much of my work there.
+              <br /> I've also worked at Wopify and Dooer, but I can't show much
+              of my work there.
             </p>
 
             <div className="mt-10 grid grid-cols-1">
