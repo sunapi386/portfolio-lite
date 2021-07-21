@@ -188,7 +188,7 @@ export default function Home() {
                 onMouseLeave={() => setHovering(undefined)}
                 rel="noopener noreferrer"
                 target="_blank"
-                href="https://cryptoprices.vercel.app"
+                href="https://cryptoprices.albingroen.com"
                 className="pb-5G lg:pb-10"
               >
                 <div
