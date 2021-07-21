@@ -42,8 +42,8 @@ export default function Home() {
         <meta property="twitter:image" content="https://res.cloudinary.com/albin-groen/image/upload/v1617307444/portfolio-seo_qayca0.png" />
       </Head>
 
-      <div className="h-screen bg-gray-800 text-white antialiased overflow-auto">
-        <nav className="fixed flex items-center justify-between w-screen top-0 left-0 bg-gray-800 shadow z-50 border-b border-gray-700 p-4 opacity-95">
+      <div className="h-screen overflow-auto antialiased text-white bg-gray-800">
+        <nav className="fixed top-0 left-0 z-50 flex items-center justify-between w-screen p-4 bg-gray-800 border-b border-gray-700 shadow opacity-95">
           <img
             src="https://res.cloudinary.com/albin-groen/image/upload/f_auto,q_auto,w_100/v1602935502/logo_uws10e.svg"
             alt="Albin Groen logotype"
@@ -51,7 +51,7 @@ export default function Home() {
           />
 
           <a href="mailto:albin.groen@gmail.com">
-            <button className="bg-gray-700 px-5 py-2 flex items-center rounded text-white font-medium text-lg transition hover:bg-blue-600">
+            <button className="flex items-center px-5 py-2 text-lg font-medium text-white bg-gray-700 rounded transition hover:bg-blue-600">
               <span className="mr-2">&rarr;</span>
               <span>Contact me</span>
             </button>
@@ -59,14 +59,14 @@ export default function Home() {
         </nav>
 
         <main className="px-4 py-10 mt-20">
-          <div className="max-w-screen-lg mx-auto">
-            <h1 className="font-medium text-5xl">Portfolio</h1>
-            <p className="mt-4 leading-relaxed text-xl text-gray-400">
+          <div className="mx-auto max-w-screen-lg">
+            <h1 className="text-5xl font-medium">Portfolio</h1>
+            <p className="mt-4 text-xl leading-relaxed text-gray-400">
               These are products and tools that I've designed, built and
               marketed myself.
               <br /> I've also worked at Wopify and{" "}
               <a
-                className="text-pink-300 font-semibold hover:underline"
+                className="font-semibold text-pink-300 hover:underline"
                 rel="noopener noreferrer"
                 href="https://dooer.com"
                 target="_blank"
@@ -76,7 +76,44 @@ export default function Home() {
               , but I can't show much of my work there.
             </p>
 
-            <div className="grid grid-cols-1 mt-10">
+            <div className="mt-10 grid grid-cols-1">
+              <a
+                onMouseLeave={() => setHovering(undefined)}
+                rel="noopener noreferrer"
+                target="_blank"
+                onMouseOver={() => setHovering("feedbackfinder")}
+                href="https://feedbackfinder.io"
+                className="pb-5 lg:pb-10"
+              >
+                <div
+                  className={`card ${
+                    !hovering || hovering === "feedbackfinder"
+                      ? "opacity-100"
+                      : "opacity-50 grayscale"
+                  }`}
+                  style={{ backgroundImage: "url(/feedbackfinder.png)" }}
+                >
+                  <h2 className="text-4xl font-bold">Feedback Finder</h2>
+                  <p className="mt-2 text-lg font-medium text-green-100 truncate">
+                    Phygital service for businesses to collect customer feedback
+                  </p>
+                  <div className="flex items-center space-x-1.5 mt-4">
+                    <span className="p-0.5 px-2 rounded-full uppercase font-mono tracking-wide border border-green-400 font-semibold text-xs">
+                      Next.js
+                    </span>
+                    <span className="p-0.5 px-2 rounded-full uppercase font-mono tracking-wide border border-green-400 font-semibold text-xs">
+                      Typescript
+                    </span>
+                    <span className="p-0.5 px-2 rounded-full uppercase font-mono tracking-wide border border-green-400 font-semibold text-xs">
+                      Postgres
+                    </span>
+                    <span className="p-0.5 px-2 rounded-full uppercase font-mono tracking-wide border border-green-400 font-semibold text-xs">
+                      Prisma
+                    </span>
+                  </div>
+                </div>
+              </a>
+
               <a
                 onMouseLeave={() => setHovering(undefined)}
                 rel="noopener noreferrer"
@@ -94,7 +131,7 @@ export default function Home() {
                   style={{ backgroundImage: "url(/john.png)" }}
                 >
                   <h2 className="text-4xl font-bold">John</h2>
-                  <p className="text-lg mt-2 truncate font-medium text-green-100">
+                  <p className="mt-2 text-lg font-medium text-green-100 truncate">
                     Online health tracker website
                   </p>
                   <div className="flex items-center space-x-1.5 mt-4">
@@ -131,7 +168,7 @@ export default function Home() {
                   style={{ backgroundImage: "url(/xhr.png)" }}
                 >
                   <h2 className="text-4xl font-bold">xhr.sh</h2>
-                  <p className="text-lg mt-2 truncate font-medium text-blue-200">
+                  <p className="mt-2 text-lg font-medium text-blue-200 truncate">
                     Open XHR request client on the web
                   </p>
                   <div className="flex items-center space-x-1.5 mt-4">
@@ -165,7 +202,7 @@ export default function Home() {
                   style={{ backgroundImage: "url(/cryptoprices.png)" }}
                 >
                   <h2 className="text-4xl font-bold">Cryptoprices</h2>
-                  <p className="text-lg mt-2 truncate font-medium text-gray-300">
+                  <p className="mt-2 text-lg font-medium text-gray-300 truncate">
                     Open app for tracking cryptocurrency prices
                   </p>
                   <div className="flex items-center space-x-1.5 mt-4">
@@ -199,7 +236,7 @@ export default function Home() {
                   style={{ backgroundImage: "url(/keyboardnotes.png)" }}
                 >
                   <h2 className="text-4xl font-bold">Keyboardnotes</h2>
-                  <p className="text-lg mt-2 truncate font-medium text-green-100">
+                  <p className="mt-2 text-lg font-medium text-green-100 truncate">
                     Keyboard-first notes application on the web
                   </p>
                   <div className="flex items-center space-x-1.5 mt-4 overflow-x-auto">
@@ -236,7 +273,7 @@ export default function Home() {
                   style={{ backgroundImage: "url(/referrer.png)" }}
                 >
                   <h2 className="text-4xl font-bold">referrer.sh</h2>
-                  <p className="text-lg mt-2 truncate font-medium text-indigo-100">
+                  <p className="mt-2 text-lg font-medium text-indigo-100 truncate">
                     Job candidates website widget
                   </p>
                   <div className="flex items-center space-x-1.5 mt-4">
@@ -270,7 +307,7 @@ export default function Home() {
                   style={{ backgroundImage: "url(/secretely.png)" }}
                 >
                   <h2 className="text-4xl font-bold">Secretely</h2>
-                  <p className="text-lg mt-2 truncate font-medium text-indigo-100">
+                  <p className="mt-2 text-lg font-medium text-indigo-100 truncate">
                     Web based password management app
                   </p>
                   <div className="flex items-center space-x-1.5 mt-4">
@@ -287,11 +324,11 @@ export default function Home() {
                 </div>
               </a>
 
-              <div className="py-12 flex items-center justify-center">
-                <span className="text-center text-gray-400 tracking-wide text-lg">
+              <div className="flex items-center justify-center py-12">
+                <span className="text-lg tracking-wide text-center text-gray-400">
                   Copyright ©{" "}
                   <a href="https://albingroen.com">
-                    <span className="text-blue-300 font-medium tracking-normal hover:underline">
+                    <span className="font-medium tracking-normal text-blue-300 hover:underline">
                       Albin Groen
                     </span>
                   </a>{" "}
