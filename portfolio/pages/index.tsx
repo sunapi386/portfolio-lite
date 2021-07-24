@@ -222,7 +222,7 @@ export default function Home() {
                 onMouseLeave={() => setHovering(undefined)}
                 rel="noopener noreferrer"
                 target="_blank"
-                href="https://keyboardnotes.io"
+                href="https://app.keyboardnotes.io"
                 className="pb-5G lg:pb-10"
               >
                 <div
