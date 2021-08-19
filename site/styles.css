@@ -89,10 +89,10 @@ h1 {
 }
 
 #profile {
-  background-image: url("https://res.cloudinary.com/albin-groen/image/upload/v1624437674/19674362_rxa43h.png");
+  background-image: url("https://res.cloudinary.com/albin-groen/image/upload/v1629360317/IMG_0366_feteec.jpg");
   -webkit-transition: 0.1s ease-in-out 0s;
   transition: 0.1s ease-in-out 0s;
-  background-position: center;
+  background-position: top;
   background-size: cover;
   border-radius: 50%;
   height: 200px;
