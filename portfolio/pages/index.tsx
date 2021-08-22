@@ -79,6 +79,43 @@ export default function Home() {
                 onMouseLeave={() => setHovering(undefined)}
                 rel="noopener noreferrer"
                 target="_blank"
+                onMouseOver={() => setHovering("narspelsappen")}
+                href="https://narspelsappen.albingroen.com"
+                className="pb-5 lg:pb-10"
+              >
+                <div
+                  className={`card ${
+                    !hovering || hovering === "narspelsappen"
+                      ? "opacity-100"
+                      : "opacity-50 grayscale"
+                  }`}
+                  style={{ backgroundImage: "url(/narspelsappen.png)" }}
+                >
+                  <h2 className="text-4xl font-bold">Närspelsappen</h2>
+                  <p className="mt-2 text-lg font-medium text-green-100 truncate">
+                    A app for helping golfers get better around the green
+                  </p>
+                  <div className="flex items-center space-x-1.5 mt-4">
+                    <span className="p-0.5 px-2 rounded-full uppercase font-mono tracking-wide border border-green-400 font-semibold text-xs">
+                      React Native
+                    </span>
+                    <span className="p-0.5 px-2 rounded-full uppercase font-mono tracking-wide border border-green-400 font-semibold text-xs">
+                      Typescript
+                    </span>
+                    <span className="p-0.5 px-2 rounded-full uppercase font-mono tracking-wide border border-green-400 font-semibold text-xs">
+                      Prisma
+                    </span>
+                    <span className="p-0.5 px-2 rounded-full uppercase font-mono tracking-wide border border-green-400 font-semibold text-xs">
+                      Postgres
+                    </span>
+                  </div>
+                </div>
+              </a>
+
+              <a
+                onMouseLeave={() => setHovering(undefined)}
+                rel="noopener noreferrer"
+                target="_blank"
                 onMouseOver={() => setHovering("feedbackfinder")}
                 href="https://feedbackfinder.io"
                 className="pb-5 lg:pb-10"
