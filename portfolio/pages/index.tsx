@@ -93,7 +93,7 @@ export default function Home() {
                 >
                   <h2 className="text-4xl font-bold">Närspelsappen</h2>
                   <p className="mt-2 text-lg font-medium text-green-100 truncate">
-                    A app for helping golfers get better around the green
+                    An app for helping golfers get better around the green
                   </p>
                   <div className="flex items-center space-x-1.5 mt-4">
                     <span className="p-0.5 px-2 rounded-full uppercase font-mono tracking-wide border border-green-400 font-semibold text-xs">
