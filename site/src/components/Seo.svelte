@@ -12,7 +12,9 @@
 		'backend',
 		'react'
 	];
-	export let url = $page.host + '/' + $page.path;
+	export let url: string = $page.host + $page.path;
+
+	export let image: string = '/meta.png';
 </script>
 
 <svelte:head>
@@ -30,4 +32,10 @@
 	<meta property="twitter:url" content={url} />
 	<meta property="twitter:title" content={title} />
 	<meta property="twitter:description" content={description} />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:image" content={image} />
+	<meta property="og:image" content={image} />
+	<meta itemProp="image" content={image} />
+	<meta content={image} name="image" />
 </svelte:head>
