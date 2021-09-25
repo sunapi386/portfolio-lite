@@ -14,7 +14,8 @@
 	];
 	export let url: string = $page.host + $page.path;
 
-	export let image: string = '/meta.png';
+	export let image: string =
+		'https://res.cloudinary.com/albin-groen/image/upload/q_auto,f_auto/v1632578242/meta_p7l4ka.png';
 
 	const fullTitle = [title, 'Albin Groen'].join(' | ');
 </script>
