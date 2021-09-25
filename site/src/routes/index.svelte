@@ -1,4 +1,5 @@
 <script context="module" lang="ts">
+	import SocialLinks from '../components/SocialLinks.svelte';
 	import SpotifyLikedSongs from '../components/SpotifyLikedSongs.svelte';
 
 	export const prerender = true;
@@ -90,46 +91,27 @@
 			date: 'Jan 2018 - Jun 2019'
 		}
 	];
-
-	const links = [
-		{
-			href: 'https://github.com/albingroen',
-			label: 'GitHub'
-		},
-		{
-			href: 'https://twitter.com/albingroen',
-			label: 'Twitter'
-		},
-		{
-			href: 'https://dribbble.com/albingroen',
-			label: 'Dribbble'
-		},
-		{
-			href: 'https://linkedin.com/in/albingroen',
-			label: 'LinkedIn'
-		}
-	];
 </script>
 
 <svelte:head>
 	<title>Home | Albin Groen</title>
 </svelte:head>
 
-<div class="mx-auto w-full max-w-screen-2xl bg-white px-48 py-36 min-h-screen">
-	<div class="flex justify-between items-end">
+<div class="w-full min-h-screen px-8 py-24 mx-auto bg-white lg:px-48 max-w-screen-2xl lg:py-36">
+	<div class="flex flex-col lg:flex-row lg:items-end lg:justify-between">
 		<div class="flex-1">
 			<div>
 				<img
 					src="https://res.cloudinary.com/albin-groen/image/upload/v1629360317/IMG_0366_feteec.jpg"
-					class="w-32 h-32 rounded-full object-top object-cover"
+					class="object-cover object-top w-32 h-32 rounded-full"
 					alt=""
 				/>
 
-				<h1 class="text-4xl font-semibold tracking-tight mt-10">Hello, I'm Albin</h1>
+				<h1 class="mt-10 text-4xl font-semibold tracking-tight">Hello, I'm Albin</h1>
 			</div>
 		</div>
 
-		<div class="flex flex-col w-[330px]">
+		<div class="flex flex-col mt-10 lg:mt-0 w-[330px]">
 			{#each pages as page}
 				<a
 					class="font-medium py-0.5 text-gray-400 hover:text-black transition text-2xl"
@@ -139,11 +121,11 @@
 		</div>
 	</div>
 
-	<div class="mt-20 grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-20">
+	<div class="mt-20 grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-20">
 		<div>
 			<h2 class="text-2xl font-medium">Projects</h2>
 
-			<div class="space-y-6 mt-8">
+			<div class="mt-8 space-y-6">
 				{#each projects as project}
 					<a target="_blank" rel="noopener noreferrer" class="block" href={project.href}>
 						<h3 class="text-xl font-semibold">{project.title}</h3>
@@ -156,7 +138,7 @@
 		<div>
 			<h2 class="text-2xl font-medium">Work history</h2>
 
-			<div class="space-y-6 mt-8">
+			<div class="mt-8 space-y-6">
 				{#each workHistory as workPlace}
 					<div>
 						<h3 class="text-xl font-semibold">{workPlace.title}</h3>
@@ -169,7 +151,7 @@
 		</div>
 
 		<div>
-			<p class="text-2xl leading-relaxed font-medium">
+			<p class="text-2xl font-medium leading-relaxed">
 				I'm a Swedish/Dutch guy living in the Stockholm area. I build things for the web and for
 				mobile devices.
 			</p>
@@ -180,17 +162,5 @@
 		</div>
 	</div>
 
-	<hr class="mt-12 border-dashed" />
-
-	<div class="space-x-2 flex mt-8">
-		{#each links as link, i}
-			{#if i}
-				<span class="text-blue-600 opacity-30">&bull;</span>
-			{/if}
-
-			<a target="_blank" rel="noopener noreferrer" class="link text-lg" href={link.href}
-				>{link.label}</a
-			>
-		{/each}
-	</div>
+	<SocialLinks />
 </div>

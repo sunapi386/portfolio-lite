@@ -1,15 +1,19 @@
+<script>
+	import SocialLinks from '../components/SocialLinks.svelte';
+</script>
+
 <svelte:head>
 	<title>About me | Albin Groen</title>
 </svelte:head>
 
-<div class="mx-auto w-full max-w-screen-2xl bg-white px-48 py-36 min-h-screen">
+<div class="w-full min-h-screen px-8 py-24 mx-auto bg-white max-w-screen-2xl lg:px-48 lg:py-36">
 	<img
 		src="https://res.cloudinary.com/albin-groen/image/upload/v1629360317/IMG_0366_feteec.jpg"
-		class="w-32 h-32 rounded-full object-top object-cover"
+		class="object-cover object-top w-32 h-32 rounded-full"
 		alt=""
 	/>
 
-	<div class="mt-10 max-w-2xl">
+	<div class="max-w-2xl mt-10">
 		<h2 class="text-4xl font-semibold tracking-tight">Who am I</h2>
 		<p class="mt-5 text-xl leading-relaxed text-gray-700">
 			I am a he/him born and raised in a city around 1 hour away from Stockholm, Sweden. I have
@@ -34,7 +38,7 @@
 			and I think I will stay for some time.
 		</p>
 
-		<div class="flex items-start space-x-6 mt-12 filter grayscale">
+		<div class="flex items-start mt-12 space-x-6 filter grayscale">
 			<div class="space-y-6">
 				<img src="/demando.jpg" class="rounded-lg" alt="" />
 				<img src="/hackathon.jpg" class="rounded-lg" alt="" />
@@ -64,4 +68,6 @@
 			tools, and strategies.
 		</p>
 	</div>
+
+	<SocialLinks />
 </div>
