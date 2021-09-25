@@ -1,10 +1,9 @@
 <script>
+	import Seo from '../components/Seo.svelte';
 	import SocialLinks from '../components/SocialLinks.svelte';
 </script>
 
-<svelte:head>
-	<title>About me | Albin Groen</title>
-</svelte:head>
+<Seo title="About" />
 
 <div class="w-full min-h-screen px-8 py-24 mx-auto bg-white max-w-screen-2xl lg:px-48 lg:py-36">
 	<img

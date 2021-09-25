@@ -1,4 +1,5 @@
 <script context="module" lang="ts">
+	import Seo from '../components/Seo.svelte';
 	import SocialLinks from '../components/SocialLinks.svelte';
 	import SpotifyLikedSongs from '../components/SpotifyLikedSongs.svelte';
 
@@ -93,9 +94,7 @@
 	];
 </script>
 
-<svelte:head>
-	<title>Home | Albin Groen</title>
-</svelte:head>
+<Seo title="Start" />
 
 <div class="w-full min-h-screen px-8 py-24 mx-auto bg-white lg:px-48 max-w-screen-2xl lg:py-36">
 	<div class="flex flex-col lg:flex-row lg:items-end lg:justify-between">
