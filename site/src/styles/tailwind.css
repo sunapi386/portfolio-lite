@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-	@apply bg-gray-800 text-gray-900;
+	@apply text-gray-900 bg-gray-800;
 }
 
 .link {
@@ -11,9 +11,21 @@ body {
 }
 
 .button {
-	@apply bg-gray-200 text-gray-700 rounded-full py-2 px-4 flex items-center justify-center hover:bg-blue-600 hover:text-white transition duration-300;
+	@apply flex items-center justify-center px-4 py-2 text-gray-700 bg-gray-200 rounded-full hover:bg-blue-600 hover:text-white transition duration-300;
 }
 
 .button-icon {
-	@apply h-4 w-4 ml-2 transform translate-y-px;
+	@apply w-4 h-4 ml-2 transform translate-y-px;
+}
+
+ul {
+	@apply space-y-2;
+}
+
+ul li {
+	@apply text-lg list-disc list-inside;
+}
+
+ul li a {
+	@apply text-blue-500;
 }

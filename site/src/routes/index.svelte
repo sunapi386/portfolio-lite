@@ -11,16 +11,16 @@
 			href: '/about'
 		},
 		{
-			label: 'Sandbox',
-			href: 'https://art.albingroen.com'
-		},
-		{
 			label: 'Resumé',
 			href: 'https://cv.albingroen.com'
 		},
 		{
 			label: 'Articles',
 			href: 'https://blog.albingroen.com'
+		},
+		{
+			label: 'Uses',
+			href: '/uses'
 		}
 	];
 
@@ -96,70 +96,68 @@
 
 <Seo title="Start" />
 
-<div class="w-full min-h-screen px-8 py-24 mx-auto bg-white lg:px-48 max-w-screen-2xl lg:py-36">
-	<div class="flex flex-col lg:flex-row lg:items-end lg:justify-between">
-		<div class="flex-1">
-			<div>
-				<img
-					src="https://res.cloudinary.com/albin-groen/image/upload/v1629360317/IMG_0366_feteec.jpg"
-					class="object-cover object-top w-32 h-32 rounded-full"
-					alt=""
-				/>
+<div class="flex flex-col lg:flex-row lg:items-end lg:justify-between">
+	<div class="flex-1">
+		<div>
+			<img
+				src="https://res.cloudinary.com/albin-groen/image/upload/v1629360317/IMG_0366_feteec.jpg"
+				class="object-cover object-top w-32 h-32 rounded-full"
+				alt=""
+			/>
 
-				<h1 class="mt-10 text-4xl font-semibold tracking-tight">Hello, I'm Albin</h1>
-			</div>
+			<h1 class="mt-10 text-4xl font-semibold tracking-tight">Hello, I'm Albin</h1>
 		</div>
+	</div>
 
-		<div class="flex flex-col mt-10 lg:mt-0 w-[330px]">
-			{#each pages as page}
-				<a
-					class="font-medium py-0.5 text-gray-400 hover:text-black transition text-2xl"
-					href={page.href}>{page.label}</a
-				>
+	<div class="flex flex-col mt-10 lg:mt-0 w-[330px]">
+		{#each pages as page}
+			<a
+				class="font-medium py-0.5 text-gray-400 hover:text-black transition text-2xl"
+				href={page.href}>{page.label}</a
+			>
+		{/each}
+	</div>
+</div>
+
+<div class="mt-20 grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-20">
+	<div>
+		<h2 class="text-2xl font-medium">Projects</h2>
+
+		<div class="mt-8 space-y-6">
+			{#each projects as project}
+				<a target="_blank" rel="noopener noreferrer" class="block" href={project.href}>
+					<h3 class="text-xl font-semibold">{project.title}</h3>
+					<p class="mt-1 text-gray-700">{project.description}</p>
+				</a>
 			{/each}
 		</div>
 	</div>
 
-	<div class="mt-20 grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-20">
-		<div>
-			<h2 class="text-2xl font-medium">Projects</h2>
+	<div>
+		<h2 class="text-2xl font-medium">Work history</h2>
 
-			<div class="mt-8 space-y-6">
-				{#each projects as project}
-					<a target="_blank" rel="noopener noreferrer" class="block" href={project.href}>
-						<h3 class="text-xl font-semibold">{project.title}</h3>
-						<p class="mt-1 text-gray-700">{project.description}</p>
-					</a>
-				{/each}
-			</div>
-		</div>
-
-		<div>
-			<h2 class="text-2xl font-medium">Work history</h2>
-
-			<div class="mt-8 space-y-6">
-				{#each workHistory as workPlace}
-					<div>
-						<h3 class="text-xl font-semibold">{workPlace.title}</h3>
-						<p class="mt-1 text-gray-700">
-							{workPlace.description} <span class="opacity-50">{workPlace.date}</span>
-						</p>
-					</div>
-				{/each}
-			</div>
-		</div>
-
-		<div>
-			<p class="text-2xl font-medium leading-relaxed">
-				I'm a Swedish/Dutch guy living in the Stockholm area. I build things for the web and for
-				mobile devices.
-			</p>
-
-			<div class="mt-12 filter grayscale hover:filter-none transition">
-				<SpotifyLikedSongs />
-			</div>
+		<div class="mt-8 space-y-6">
+			{#each workHistory as workPlace}
+				<div>
+					<h3 class="text-xl font-semibold">{workPlace.title}</h3>
+					<p class="mt-1 text-gray-700">
+						{workPlace.description} <span class="opacity-50">{workPlace.date}</span>
+					</p>
+				</div>
+			{/each}
 		</div>
 	</div>
 
-	<SocialLinks />
+	<div>
+		<p class="text-2xl font-medium leading-relaxed">
+			I'm a Swedish/Dutch guy living in the Stockholm area. I build things for the web and for
+			mobile devices.
+		</p>
+
+		<div class="mt-12 filter grayscale hover:filter-none transition">
+			<SpotifyLikedSongs />
+		</div>
+	</div>
 </div>
+
+<SocialLinks />

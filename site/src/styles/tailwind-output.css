@@ -637,6 +637,9 @@ video {
 .mt-1 {
 	margin-top: 0.25rem;
 }
+.mt-6 {
+	margin-top: 1.5rem;
+}
 .block {
 	display: block;
 }
@@ -714,6 +717,9 @@ video {
 }
 .gap-20 {
 	gap: 5rem;
+}
+.gap-12 {
+	gap: 3rem;
 }
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
 	--tw-space-x-reverse: 0;
@@ -875,6 +881,10 @@ video {
 	font-size: 1.5rem;
 	line-height: 2rem;
 }
+.text-3xl {
+	font-size: 1.875rem;
+	line-height: 2.25rem;
+}
 .font-semibold {
 	font-weight: 600;
 }
@@ -990,10 +1000,10 @@ body {
 	border-radius: 9999px;
 	--tw-bg-opacity: 1;
 	background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
-	padding-top: 0.5rem;
-	padding-bottom: 0.5rem;
 	padding-left: 1rem;
 	padding-right: 1rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
 	--tw-text-opacity: 1;
 	color: rgba(55, 65, 81, var(--tw-text-opacity));
 	transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
@@ -1020,6 +1030,24 @@ body {
 	transform: var(--tw-transform);
 }
 
+ul > :not([hidden]) ~ :not([hidden]) {
+	--tw-space-y-reverse: 0;
+	margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+	margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+ul li {
+	list-style-position: inside;
+	list-style-type: disc;
+	font-size: 1.125rem;
+	line-height: 1.75rem;
+}
+
+ul li a {
+	--tw-text-opacity: 1;
+	color: rgba(59, 130, 246, var(--tw-text-opacity));
+}
+
 .group:hover .group-hover\:text-white {
 	--tw-text-opacity: 1;
 	color: rgba(255, 255, 255, var(--tw-text-opacity));
@@ -1037,6 +1065,13 @@ body {
 
 .hover\:filter-none:hover {
 	filter: none;
+}
+
+@media (min-width: 768px) {
+
+	.md\:grid-cols-2 {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
 }
 
 @media (min-width: 1024px) {
