@@ -221,40 +221,6 @@ export default function Home() {
               </a>
 
               <a
-                onMouseOver={() => setHovering("cryptoprices")}
-                onMouseLeave={() => setHovering(undefined)}
-                rel="noopener noreferrer"
-                target="_blank"
-                href="https://cryptoprices.albingroen.com"
-                className="pb-5G lg:pb-10"
-              >
-                <div
-                  className={`card ${
-                    !hovering || hovering === "cryptoprices"
-                      ? "opacity-100"
-                      : "opacity-50 grayscale"
-                  }`}
-                  style={{ backgroundImage: "url(/cryptoprices.png)" }}
-                >
-                  <h2 className="text-4xl font-bold">Cryptoprices</h2>
-                  <p className="mt-2 text-lg font-medium text-gray-300 truncate">
-                    Open app for tracking cryptocurrency prices
-                  </p>
-                  <div className="flex items-center space-x-1.5 mt-4">
-                    <span className="p-0.5 px-2 rounded-full uppercase font-mono tracking-wide border border-gray-500 font-semibold text-xs">
-                      React.js
-                    </span>
-                    <span className="p-0.5 px-2 rounded-full uppercase font-mono tracking-wide border border-gray-500 font-semibold text-xs">
-                      TypeScript
-                    </span>
-                    <span className="p-0.5 px-2 rounded-full uppercase font-mono tracking-wide border border-gray-500 font-semibold text-xs">
-                      TailwindCSS
-                    </span>
-                  </div>
-                </div>
-              </a>
-
-              <a
                 onMouseOver={() => setHovering("keyboardnotes")}
                 onMouseLeave={() => setHovering(undefined)}
                 rel="noopener noreferrer"
