@@ -51,11 +51,6 @@
 			href: 'https://www.xhr.sh'
 		},
 		{
-			title: 'Cryptoprices',
-			description: 'Open website for tracking every cryptocurrency price and history',
-			href: 'https://cryptoprices.vercel.app'
-		},
-		{
 			title: 'Keyboardnotes',
 			description: 'Keyboard-driven note-taking application for the web',
 			href: 'https://keyboardnotes.io'
