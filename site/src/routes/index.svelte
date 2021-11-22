@@ -145,8 +145,8 @@
 
 	<div>
 		<p class="text-2xl font-medium leading-relaxed">
-			I'm a Swedish/Dutch guy living in the Stockholm area. I build things for the web and for
-			mobile devices.
+			I'm a Swedish/Dutch guy living in Stockholm. I build things for the web and for mobile
+			devices.
 		</p>
 
 		<div class="mt-12 filter grayscale hover:filter-none transition">
