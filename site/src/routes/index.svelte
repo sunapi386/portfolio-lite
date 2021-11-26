@@ -26,6 +26,11 @@
 
 	const projects = [
 		{
+			title: 'Prisma Schema Builder',
+			description: 'Build your Prisma schema visually in this easy-to-use web based tool.',
+			href: 'https://prismabuilder.io'
+		},
+		{
 			title: 'utilcomps',
 			description: 'Utilitarian component library written in Svelte, for Svelte',
 			href: 'https://github.com/albingroen/utilcomps'
