@@ -79,6 +79,41 @@ export default function Home() {
                 onMouseLeave={() => setHovering(undefined)}
                 rel="noopener noreferrer"
                 target="_blank"
+                onMouseOver={() => setHovering("schema-builder")}
+                href="https://prismabuilder.io"
+                className="pb-5 lg:pb-10"
+              >
+                <div
+                  className={`card ${
+                    !hovering || hovering === "schema-builder"
+                      ? "opacity-100"
+                      : "opacity-50 grayscale"
+                  }`}
+                  style={{ backgroundImage: "url(/schema-builder.png)" }}
+                >
+                  <h2 className="text-4xl font-bold">Prisma Schema Builder</h2>
+                  <p className="mt-2 text-lg font-medium text-green-100 truncate">
+                    Build your Prisma schema visually in this easy-to-use web
+                    based tool
+                  </p>
+                  <div className="flex items-center space-x-1.5 mt-4">
+                    <span className="p-0.5 px-2 rounded-full uppercase font-mono tracking-wide border border-green-400 font-semibold text-xs">
+                      Next.js
+                    </span>
+                    <span className="p-0.5 px-2 rounded-full uppercase font-mono tracking-wide border border-green-400 font-semibold text-xs">
+                      React
+                    </span>
+                    <span className="p-0.5 px-2 rounded-full uppercase font-mono tracking-wide border border-green-400 font-semibold text-xs">
+                      Prisma
+                    </span>
+                  </div>
+                </div>
+              </a>
+
+              <a
+                onMouseLeave={() => setHovering(undefined)}
+                rel="noopener noreferrer"
+                target="_blank"
                 onMouseOver={() => setHovering("narspelsappen")}
                 href="https://narspelsappen.albingroen.com"
                 className="pb-5 lg:pb-10"
