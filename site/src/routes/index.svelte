@@ -31,6 +31,16 @@
 			href: 'https://prismabuilder.io'
 		},
 		{
+			title: 'quick.nvim',
+			description: 'A very fast Lua based Neovim configuration that uses coc.nvim for intellisense',
+			href: 'https://github.com/albingroen/quick.nvim'
+		},
+		{
+			title: 'react-cmdk',
+			description: 'A fast, accessible, and pretty React.js command palette component',
+			href: 'https://github.com/albingroen/react-cmdk'
+		},
+		{
 			title: 'utilcomps',
 			description: 'Utilitarian component library written in Svelte, for Svelte',
 			href: 'https://github.com/albingroen/utilcomps'
