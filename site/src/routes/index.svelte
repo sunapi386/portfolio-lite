@@ -26,6 +26,12 @@
 
 	const projects = [
 		{
+			title: 'Bostadskollen',
+			description:
+				'A simple web form where you can find out what an apartment would actually cost you',
+			href: 'https://bostadskollen.albingroen.com'
+		},
+		{
 			title: 'Prisma Schema Builder',
 			description: 'Build your Prisma schema visually in this easy-to-use web based tool.',
 			href: 'https://prismabuilder.io'
