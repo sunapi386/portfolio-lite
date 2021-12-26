@@ -36,14 +36,15 @@
 	</p>
 
 	<div class="flex items-start mt-12 space-x-6 filter grayscale">
-		<div class="space-y-6">
+		<div class="space-y-6 flex-1">
 			<img src="/demando.jpg" class="rounded-lg" alt="" />
-			<img src="/hackathon.jpg" class="rounded-lg" alt="" />
+			<img src="/demando_moving.jpg" class="rounded-lg" alt="" />
 		</div>
 
-		<div class="space-y-6">
+		<div class="space-y-6 flex-1">
 			<img src="/dooer.jpeg" class="rounded-lg" alt="" />
 			<img src="/golf.jpg" class="rounded-lg" alt="" />
+			<img src="/hackathon.jpg" class="rounded-lg" alt="" />
 		</div>
 	</div>
 
