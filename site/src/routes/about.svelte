@@ -3,7 +3,7 @@
 	import SocialLinks from '../components/SocialLinks.svelte';
 </script>
 
-<Seo title="About" />
+<Seo title="About Albin" />
 
 <img
 	src="https://res.cloudinary.com/albin-groen/image/upload/v1629360317/IMG_0366_feteec.jpg"
